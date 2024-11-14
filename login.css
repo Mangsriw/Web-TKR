@@ -191,6 +191,8 @@ body {
 .container.sign-up .social-list.sign-up,
 .container.sign-up .social-list.sign-up>div {
     transform: scale(1);
+    /* Saat kelas .sign-in atau .sign-up ditambahkan pada elemen .container, elemen .form.sign-in atau .form.sign-up akan diperbesar menjadi ukuran penuh dengan transform: scale(1).
+       Ketika kelas tidak ada, elemen ini tetap dalam keadaan tersembunyi dengan transform: scale(0). */
 }
 
 .content-row {
@@ -246,6 +248,8 @@ body {
 .container.sign-up .img.sign-up img {
     transform: translateX(0);
 }
+/* Ketika kelas .sign-in atau .sign-up ditambahkan pada elemen .container, elemen teks dan gambar di dalamnya bergeser kembali ke posisi 
+semula dari posisi translateX(-250%) atau translateX(250%), menciptakan efek animasi yang halus untuk konten saat transisi antar tampilan. */
 
 /* BACKGROUND */
 
@@ -274,6 +278,8 @@ body {
     transform: translate(100%, 0);
     right: 50%;
 }
+/* Bagian ini mengatur perubahan latar belakang dengan efek transisi ketika kelas .sign-in atau .sign-up ditambahkan. 
+Efek translate pada latar belakang berubah sesuai dengan kelas, menciptakan animasi visual untuk mengganti mode antara sign-in dan sign-up. */
 
 /* RESPONSIVE */
 
@@ -371,5 +377,5 @@ body {
 }
 
 .forgot-password:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }
